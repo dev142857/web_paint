@@ -15,10 +15,6 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
   const onRedirectCallback = (appState) => {
     navigate(appState?.returnTo || window.location.pathname);
   };
-  console.log(process.env.REACT_APP_VERCEL_ENV);
-  console.log(domain);
-  console.log(clientId);
-  console.log(redirectUri);
 
   if (!(domain && clientId && redirectUri)) {
     return null;
