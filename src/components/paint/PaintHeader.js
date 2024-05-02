@@ -2,6 +2,6 @@ import React from 'react'
 
 export const PaintHeader = () => {
   return (
-    <div>PaintHeader</div>
+    <div>PaintHeaders</div>
   )
 }
